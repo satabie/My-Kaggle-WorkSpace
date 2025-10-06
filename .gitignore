@@ -1,0 +1,41 @@
+# Data files
+data/
+datasets/*/
+*.csv
+*.tsv
+*.parquet
+
+# Model files
+models/
+*.pkl
+*.h5
+*.pt
+*.pth
+*.ckpt
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.so
+.env
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large files
+*.zip
+*.tar.gz
+*.7z
