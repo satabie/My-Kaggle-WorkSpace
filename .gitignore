@@ -1,6 +1,6 @@
 # Data files
 data/
-datasets/*/
+datasets
 *.csv
 *.tsv
 *.parquet
