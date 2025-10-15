@@ -1,0 +1,36 @@
+- id: データID
+- win: 勝利（1=勝利、0=敗北）
+- kills: キル数（敵チャンピオンを倒した数）
+- deaths: デス数（自分が倒された回数）
+- assists: アシスト数（味方のキルを援助した回数）
+- largestkillingspree: 最大連続キル数
+- largestmultikill: 最大マルチキル数（短時間での連続キル）
+- longesttimespentliving: 最長生存時間
+- doublekills: ダブルキル数（2連続キル）
+- triplekills: トリプルキル数（3連続キル）
+- quadrakills: クアドラキル数（4連続キル）
+- pentakills: ペンタキル数（5連続キル）
+- totdmgdealt: 総ダメージ量
+- magicdmgdealt: 魔法ダメージ量
+- physicaldmgdealt: 物理ダメージ量
+- truedmgdealt: 確定ダメージ量（防御無視）
+- largestcrit: 最大クリティカルダメージ
+- totdmgtochamp: チャンピオンへの総ダメージ量
+- magicdmgtochamp: チャンピオンへの魔法ダメージ量
+- physdmgtochamp: チャンピオンへの物理ダメージ量
+- truedmgtochamp: チャンピオンへの確定ダメージ量
+- totheal: 総回復量
+- totunitshealed: 回復したユニット数
+- dmgtoturrets: タレット（防衛塔）へのダメージ量
+- timecc: 敵を行動不能にした時間（CC: クラウドコントロール）
+- totdmgtaken: 被ダメージ総量
+- magicdmgtaken: 被魔法ダメージ量
+- physdmgtaken: 被物理ダメージ量
+- truedmgtaken: 被確定ダメージ量
+- wardsplaced: 設置したワード数（視界確保アイテム）
+- wardskilled: 破壊したワード数
+- firstblood: ファーストブラッド（試合最初のキル、1=取得、0=未取得）
+
+# 自作特徴量
+- KDA
+
