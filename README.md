@@ -1,6 +1,6 @@
 # My Kaggle Workspace
 
-Kaggleコンペティション・データセット分析用リポジトリ
+Kaggleコンペティション用リポジトリ
 
 ## ディレクトリ構成
 
