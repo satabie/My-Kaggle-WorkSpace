@@ -1,4 +1,4 @@
-# LoL Winning Prediction
+# League of Legends Winning Prediction
 
 <table>
 	<thead>
@@ -13,6 +13,26 @@
 
 ## Key Features
 
+## Data Preprocessing
+
+### Handling Missing Values
+
+### Feature Engineering
+
+### Data Splitting
+
 ## Models
 
-## What worked
+### Model Selection
+
+### Hyperparameter Tuning
+
+## Results
+
+### Evaluation Metrics
+
+### Leaderboard
+
+## Lessons Learned & Reflections
+
+## References

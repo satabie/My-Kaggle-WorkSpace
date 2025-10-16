@@ -1,4 +1,4 @@
-# LoL Winning Prediction
+# League of Legends Winning Prediction
 
 <table>
 	<thead>
@@ -9,12 +9,30 @@
   	</thead>
 </table>
 
-This is a repository for the Kaggle competition [League of Legends Winning Prediction](https://www.kaggle.com/competitions/league-of-legends-winning-prediction/overview).
-
 ## TL;DR
 
 ## Key Features
 
+## Data Preprocessing
+
+### Handling Missing Values
+
+### Feature Engineering
+
+### Data Splitting
+
 ## Models
 
-## What worked
+### Model Selection
+
+### Hyperparameter Tuning
+
+## Results
+
+### Evaluation Metrics
+
+### Leaderboard
+
+## Lessons Learned & Reflections
+
+## References
