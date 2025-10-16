@@ -9,6 +9,8 @@
   	</thead>
 </table>
 
+This is a repository for the Kaggle competition [League of Legends Winning Prediction](https://www.kaggle.com/competitions/league-of-legends-winning-prediction/overview).
+
 ## TL;DR
 
 ## Key Features
