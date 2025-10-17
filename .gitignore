@@ -39,3 +39,14 @@ Thumbs.db
 *.zip
 *.tar.gz
 *.7z
+
+# Kaggle specific
+competitions/*/data/
+
+# Experimental outputs (keep only selected important ones)
+competitions/*/outputs/experiments/
+competitions/*/outputs/temp/
+
+# Large output files
+competitions/*/outputs/*.pkl
+competitions/*/outputs/*.csv

@@ -31,6 +31,5 @@
 - wardskilled: 破壊したワード数
 - firstblood: ファーストブラッド（試合最初のキル、1=取得、0=未取得）
 
-# 自作特徴量
-- KDA
-
+# 自作
+- KDA: (kills + assists + 1) / max(1, deaths) - キルデスアシスト比率. 分子を1増やすことで、deaths増加した際にKDAが小さくなるようにしている。
