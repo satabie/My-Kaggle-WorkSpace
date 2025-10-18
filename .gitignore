@@ -50,3 +50,4 @@ competitions/*/outputs/temp/
 # Large output files
 competitions/*/outputs/*.pkl
 competitions/*/outputs/*.csv
+competitions/*/outputs/models/
