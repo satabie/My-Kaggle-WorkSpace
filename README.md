@@ -5,7 +5,7 @@ Kaggleコンペティション用リポジトリ
 ## ディレクトリ構成
 
 - `competitions/`
-    - `compe_tmplate/`
+    - `template/`
     - `{type_of_competition}/`
         - `{competition_name}`
             - `src/` - モジュール・スクリプト
