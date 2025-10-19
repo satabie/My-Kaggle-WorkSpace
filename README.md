@@ -8,6 +8,7 @@ Kaggleコンペティション用リポジトリ
     - `template/`
     - `{type_of_competition}/`
         - `{competition_name}`
+            - `configs/` - 設定ファイル
             - `src/` - モジュール・スクリプト
             - `notebooks/` - ノートブック
             - `outputs/`
@@ -17,7 +18,6 @@ Kaggleコンペティション用リポジトリ
                 - `figures/` - 可視化結果
             - `data/` - データ
             - `solution_{en|ja}.md` - 解法ノート（英語・日本語）
-            - `config.yaml` - モデルの設定ファイル
 
 ## Solution
 (ここにリンク貼る)
