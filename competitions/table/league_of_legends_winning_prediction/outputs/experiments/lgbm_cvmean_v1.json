@@ -1,0 +1,47 @@
+{
+  "experiment": "lgbm_cvmean_v1",
+  "date": "2025-10-19 23:59:00",
+  "description": "LightGBM CV mean",
+  "oof_auc": 0.9379038386605619,
+  "cv_auc_mean": 0.9379065616052381,
+  "cv_auc_std": 0.0012435735243190268,
+  "cv_auc_per_fold": [
+    0.9377771265429554,
+    0.93670119574111,
+    0.9365900267253169,
+    0.9385199583587834,
+    0.9399445006580249
+  ],
+  "oof_acc": 0.8556111111111111,
+  "cv_acc_mean": 0.8556111111111111,
+  "cv_acc_std": 0.0020937931863981903,
+  "cv_acc_per_fold": [
+    0.8553125,
+    0.8534375,
+    0.8534027777777777,
+    0.8571527777777778,
+    0.85875
+  ],
+  "params": {
+    "objective": "binary",
+    "metric": "binary_logloss",
+    "boosting_type": "gbdt",
+    "learning_rate": 0.05,
+    "num_leaves": 31,
+    "max_depth": -1,
+    "feature_fraction": 0.9,
+    "bagging_fraction": 0.8,
+    "bagging_freq": 5,
+    "verbose": -1,
+    "random_state": 42
+  },
+  "threshold": 0.5078,
+  "best_iterations": [
+    532,
+    575,
+    620,
+    781,
+    990
+  ],
+  "mean_iteration": 699.6
+}
