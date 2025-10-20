@@ -1,6 +1,8 @@
 # My Kaggle Workspace
 
 Kaggleコンペティション用リポジトリ
+開催中のコンペティションは含まれていません。
+どうぞご自由にお使いください。
 
 ## ディレクトリ構成
 
@@ -21,3 +23,12 @@ Kaggleコンペティション用リポジトリ
 
 ## Solution
 (ここにリンク貼る)
+
+## Usage
+uvをinstallしてからコンペディレクトリ上で以下のコマンドを実行してください。
+```bash
+uv sync
+```
+```bash
+source .venv/bin/activate
+```
