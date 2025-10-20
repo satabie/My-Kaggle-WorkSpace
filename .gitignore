@@ -24,6 +24,7 @@ __pycache__/
 *.so
 .env
 venv/
+.venv/
 
 # IDE
 .vscode/
@@ -42,10 +43,6 @@ Thumbs.db
 
 # Kaggle specific
 competitions/*/data/
-
-# Experimental outputs (keep only selected important ones)
-competitions/*/outputs/experiments/
-competitions/*/outputs/temp/
 
 # Large output files
 competitions/*/outputs/*.pkl

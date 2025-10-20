@@ -1,14 +1,16 @@
 # My Kaggle Workspace
 
 Kaggleコンペティション用リポジトリ
+開催中のコンペティションは含まれていません。
+どうぞご自由にお使いください。
 
 ## ディレクトリ構成
 
 - `competitions/`
     - `template/`
     - `{type_of_competition}/`
-        - `{competition_name}`
-            - `configs/` - 設定ファイル
+        - `{competition_name}/`
+            - `configs/` - 学習用設定ファイル
             - `src/` - モジュール・スクリプト
             - `notebooks/` - ノートブック
             - `outputs/`
@@ -17,7 +19,16 @@ Kaggleコンペティション用リポジトリ
                 - `submissions` - 提出ファイル
                 - `figures/` - 可視化結果
             - `data/` - データ
-            - `solution_{en|ja}.md` - 解法ノート（英語・日本語）
+            - `solution/` - 解法ノート（英語・日本語）
 
 ## Solution
 (ここにリンク貼る)
+
+## Usage
+uvをinstallしてからコンペディレクトリ上で以下のコマンドを実行してください。
+```bash
+uv sync
+```
+```bash
+source .venv/bin/activate
+```
