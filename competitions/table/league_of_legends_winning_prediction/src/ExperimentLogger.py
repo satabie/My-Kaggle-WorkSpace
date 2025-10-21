@@ -40,7 +40,7 @@ class ExperimentLogger:
             result["mean_iteration"] = float(np.mean(best_iterations))
 
         # JSONで保存（ディレクトリが存在しない場合は作成）
-        output_dir = "../outputs/experiments"
+        output_dir = "./outputs/experiments"
         os.makedirs(output_dir, exist_ok=True)
 
         filename = os.path.join(output_dir, f"{self.exp_name}_v{self.version}.json")
