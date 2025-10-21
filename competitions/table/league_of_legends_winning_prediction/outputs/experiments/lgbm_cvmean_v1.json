@@ -1,6 +1,6 @@
 {
   "experiment": "lgbm_cvmean_v1",
-  "date": "2025-10-19 23:59:00",
+  "date": "2025-10-21 13:27:29",
   "description": "LightGBM CV mean",
   "oof_auc": 0.9379038386605619,
   "cv_auc_mean": 0.9379065616052381,
