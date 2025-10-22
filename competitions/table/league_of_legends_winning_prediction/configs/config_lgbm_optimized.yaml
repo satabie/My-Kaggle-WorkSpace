@@ -1,18 +1,34 @@
 model:
-  objective: binary
-  metric: binary_logloss
-  boosting_type: gbdt
-  verbosity: -1
-  random_state: 42
-  learning_rate: 0.018755187732905482
-  num_leaves: 93
-  max_depth: 10
-  min_child_samples: 88
-  feature_fraction: 0.6229785450447526
-  bagging_fraction: 0.8425187268765811
-  bagging_freq: 4
-  lambda_l1: 3.44684901676459
-  lambda_l2: 0.0007365075504023804
-optimization:
-  best_auc: 0.939182892075881
-  n_trials: 100
+  lgbm:
+    objective: binary
+    metric: binary_logloss
+    boosting_type: gbdt
+    verbosity: -1
+    random_state: 42
+    learning_rate: 0.018755187732905482
+    num_leaves: 93
+    max_depth: 10
+    min_child_samples: 88
+    feature_fraction: 0.6229785450447526
+    bagging_fraction: 0.8425187268765811
+    bagging_freq: 4
+    lambda_l1: 3.44684901676459
+    lambda_l2: 0.0007365075504023804
+
+  learning_control:
+    num_boost_round: 1000
+    early_stopping_rounds: 50
+  
+  
+threshold:
+  optimal: 0.5078
+
+experiment:
+  name: lgbm_cvmean_opt
+  version: 1
+  description: "LightGBM CV mean"
+  tags:
+    - lgbm
+    - cv
+    - feature_2
+  author: shosei

@@ -37,8 +37,8 @@ def _():
 @app.cell
 def _(pd):
     # データ準備
-    X_train = pd.read_csv("./data/processed/train_x_add_features.csv")
-    test_df = pd.read_csv("./data/processed/test_x_add_features.csv")
+    X_train = pd.read_csv("./data/processed/train_x_add_features_2.csv")
+    test_df = pd.read_csv("./data/processed/test_x_add_features_2.csv")
 
     y_train = X_train["win"]
     X_train.drop(["win"], axis=1, inplace=True)
@@ -49,8 +49,8 @@ def _(pd):
 
 
 @app.cell
-def _(StratifiedKFold, X_train, yaml):
-    config_path = "./configs/config_lgbm_cvmean.yaml"
+def _(StratifiedKFold, yaml):
+    config_path = "./configs/config_lgbm_optimized.yaml"
     with open(config_path) as f:
         config = yaml.safe_load(f)
 
@@ -58,8 +58,6 @@ def _(StratifiedKFold, X_train, yaml):
     n_splits = 5
     optimal_threshold = config["threshold"]["optimal"]
     kf = StratifiedKFold(n_splits=n_splits, shuffle=True, random_state=71)
-
-    len(X_train) // n_splits
     return config, config_path, kf, n_splits, optimal_threshold
 
 
@@ -279,7 +277,7 @@ def _(optimal_threshold, pd, test_df, test_predictions):
     # テストデータの最終予測(全Fold平均)
     y_test_pred_binary = (test_predictions > optimal_threshold).astype(int)
 
-    save_path = "./outputs/submissions/submission_lgbm_cvmean_v2.csv"
+    save_path = "./outputs/submissions/submission_lgbm_optuna_add_feature.csv"
     submission_df = pd.DataFrame({"id": test_df["id"], "win": y_test_pred_binary})
     submission_df.to_csv(save_path, index=False)
     return
@@ -296,6 +294,11 @@ def _(cv_train_auc, cv_train_scores, cv_valid_auc, cv_valid_scores, np):
 @app.cell
 def _(train_valid_gap, train_valid_gap_auc):
     print(train_valid_gap, train_valid_gap_auc)
+    return
+
+
+@app.cell
+def _():
     return
 
 
